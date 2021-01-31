@@ -75,17 +75,15 @@ The Block Storage plug-in is a persistent, high-performance iSCSI storage that y
 
 - Create 	a private channel and invite the bot in your channel by 	typing **/invite 	@name_of_your_bot** in 	the Slack message area
 
-- - Create 	a kubewatch config map with the Slack token and the channel name. 	You can also modify the flags to configure kubewatch to notify on 	changes to particular types of Kubernetes resources. The below 	configuration only monitors pods and services
+- Create 	a kubewatch config map with the Slack token and the channel name. 	You can also modify the flags to configure kubewatch to notify on 	changes to particular types of Kubernetes resources. The below 	configuration only monitors pods and services
 
-- - Create 	a service account for kubewatch to interact with the Kubernetes 	resources and assign the relevant privileges through 	a **ClusterRole** and 	a **ClusterRoleBinding**
+- Create 	a service account for kubewatch to interact with the Kubernetes 	resources and assign the relevant privileges through 	a **ClusterRole** and 	a **ClusterRoleBinding**
 
-- - Create 	a kubewatch deployment
-  - Check 	if the pod is running
-  - view 	the kubewatch container logs 
-
-- - Check 	 the 	Slack channel for notifications
-
-- - Kubewatch 	will now monitor the cluster and send data to the Slack channel
+- Create 	a kubewatch deployment
+- Check 	if the pod is running
+- view 	the kubewatch container logs 
+- Check 	 the 	Slack channel for notifications
+- Kubewatch 	will now monitor the cluster and send data to the Slack channel
 
 
  
