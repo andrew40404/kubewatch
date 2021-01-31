@@ -8,7 +8,7 @@
 
 - Search for **Kubernetes Service** and click on it
 
-  ![(https://user-images.githubusercontent.com/5286796/106395222-0d9fa300-6427-11eb-9100-bf270bedfdb4.png)
+  ![installing Kubewatch (1)_html_46d1c04e26ba5eea](https://user-images.githubusercontent.com/5286796/106396369-7ab63700-642d-11eb-803d-854f917fcf39.png)
 
 - You are now at the Kubernetes deployment page. You need to specify some details about the cluster
 
@@ -24,13 +24,13 @@
 
 - Choose **classic** or **VPC** , read the docs and choose the most suitable type for yourself
 
-  ![Kubeapps_newdoc_html_4d3a968071544952](https://user-images.githubusercontent.com/5286796/106395219-0c6e7600-6427-11eb-99e4-fb7c5d0c5d5e.png
+  ![installing Kubewatch (1)_html_4d3a968071544952](https://user-images.githubusercontent.com/5286796/106396367-79850a00-642d-11eb-92cb-ed60e5998b4d.png)
 
 - Now choose your location settings,
 
 - Choose **Geography** (continent)
 
-![Kubeapps_newdoc_html_72496e6b0b2c820d](https://user-images.githubusercontent.com/5286796/106395218-0aa4b280-6427-11eb-9589-6638903ae4ff.png
+![installing Kubewatch (1)_html_72496e6b0b2c820d](https://user-images.githubusercontent.com/5286796/106396363-768a1980-642d-11eb-8eef-f5b71e6b24a4.png)
 
 -   Choose 	Single or Multizone, in single zone your data is only kept in on 	datacenter, on the
 
