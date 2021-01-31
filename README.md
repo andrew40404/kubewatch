@@ -71,9 +71,9 @@ The Block Storage plug-in is a persistent, high-performance iSCSI storage that y
 
 **Steps:**
 
-- - Congifure 	Stack- 	You 	will need to create a Slack bot and invite the bot to the Slack 	channel in which you want kubewatch to post all the notifications. 	Kubewatch uses webhooks to display notifications
+- Congifure 	Stack- 	You 	will need to create a Slack bot and invite the bot to the Slack 	channel in which you want kubewatch to post all the notifications. 	Kubewatch uses webhooks to display notifications
 
-- - Create 	a private channel and invite the bot in your channel by 	typing **/invite 	@name_of_your_bot** in 	the Slack message area
+- Create 	a private channel and invite the bot in your channel by 	typing **/invite 	@name_of_your_bot** in 	the Slack message area
 
 - - Create 	a kubewatch config map with the Slack token and the channel name. 	You can also modify the flags to configure kubewatch to notify on 	changes to particular types of Kubernetes resources. The below 	configuration only monitors pods and services
 
