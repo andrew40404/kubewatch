@@ -10,7 +10,8 @@ This document will describe how to install Kubewatch on IBM Cloud using Kubernet
 
 - You are now at the Kubernetes deployment page. You need to specify some information about the cluster.
 
-- Choose either of the following plans; **standard** or **free**. The free plan only have one worker node and no subnet. To provision a standard cluster. You will need to upgrade your account to Pay-As-You-Go
+- Choose either of the following plans; **standard** or **free**. The free plan only have one worker node and no subnet. To provision a standard cluster.
+  You will need to upgrade your account to Pay-As-You-Go
 - To upgrade to a Pay-As-You-Go account, complete the following steps:
 - In the console, go to Manage > Account.
 - Select Account settings and click `Add credit card`.
@@ -29,13 +30,12 @@ This document will describe how to install Kubewatch on IBM Cloud using Kubernet
 > In single zone, your data is only kept on the datacenter while on the other hand with Multizone, it is distributed to multiple zones, thus safer in an unforeseen zone failure
 >
 > If you wish to use Multizone, please set up your account with VRF
-> 
 
 - If at your current location selection, there is no available Virtual LAN, a new VLAN will be created for you
 - Choose a Worker node setup or use the preselected one. SSet Worker node amount per zone
 - Choose **Master Service Endpoint**. 
 
-> In VRF-enabled accounts, you can choose private-only to make your master accessible on the private network or via VPN tunnel. Choose public-only to make your master publicly accessible. When you have a VRF-enabled account, your cluster is set up by default to use both private and public endpoints.
+> In VRF-enabled accounts, you can choose private-only to make your master accessible on the private network or via VPN tunnel. Choose public-only to make your master publicly     accessible. When you have a VRF-enabled account, your cluster is set up by default to use both private and public endpoints.
    
 - Give desired **tags** to your cluster, for more information visit tags
 - Click **create**
@@ -65,19 +65,20 @@ The Block Storage plug-in is a persistent, high-performance iSCSI storage that y
 
 **Steps:**
 
-- Congifure 	Stack- 	You 	will need to create a Slack bot and invite the bot to the Slack 	channel in which you want kubewatch to post all the notifications. 	Kubewatch uses webhooks to display notifications
+- Congifure Stack- You 	will need to create a Slack bot and invite the bot to the Slack channel in which you want kubewatch to post all the notifications. 	
+  Kubewatch uses webhooks to display notifications
 
-- Create 	a private channel and invite the bot in your channel by 	typing **/invite 	@name_of_your_bot** in 	the Slack message area
+- Create a private channel and invite the bot in your channel by typing **/invite 	@name_of_your_bot** in the Slack message area
 
-- Create 	a kubewatch config map with the Slack token and the channel name. 	You can also modify the flags to configure kubewatch to notify on 	changes to particular types of Kubernetes resources. The below 	configuration only monitors pods and services
+- Create a kubewatch config map with the Slack token and the channel name.You can also modify the flags to configure kubewatch to notify on 	changes to particular types of       Kubernetes resources. The below 	configuration only monitors pods and services
 
-- Create 	a service account for kubewatch to interact with the Kubernetes 	resources and assign the relevant privileges through 	a **ClusterRole** and 	a **ClusterRoleBinding**
+- Create a service account for kubewatch to interact with the Kubernetes resources and assign the relevant privileges through a **ClusterRole** and a **ClusterRoleBinding**
 
-- Create 	a kubewatch deployment
-- Check 	if the pod is running
-- view 	the kubewatch container logs 
-- Check 	 the 	Slack channel for notifications
-- Kubewatch 	will now monitor the cluster and send data to the Slack channel
+- Create a kubewatch deployment
+- Check if the pod is running
+- view the kubewatch container logs 
+- Check the Slack channel for notifications
+- Kubewatch will now monitor the cluster and send data to the Slack channel
 
 The installation is done. Enjoy!
 
