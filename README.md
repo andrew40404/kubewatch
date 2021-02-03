@@ -79,6 +79,7 @@ The Block Storage plug-in is a persistent, high-performance iSCSI storage that y
 - Check 	 the 	Slack channel for notifications
 - Kubewatch 	will now monitor the cluster and send data to the Slack channel
 
+The installation is done. Enjoy!
 
  
 
