@@ -66,7 +66,11 @@ The Block Storage plug-in is a persistent, high-performance iSCSI storage that y
 - Configure Slack- You will need to create a Slack bot and invite the bot to the Slack channel in which you want Kubewatch to post all the notifications. 	
   Kubewatch uses webhooks to display notifications
 
-- Create a private channel and invite the bot in your channel by typing **/invite 	@name_of_your_bot** in the Slack message area
+- Create a private channel and invite the bot in your channel by typing 
+```sh
+/invite @name_of_your_bot 
+```
+in the Slack message area.
 
 - Create a Kubewatch config map with the Slack token and the channel name. You can also modify the flags to configure Kubewatch to notify on changes to particular types of Kubernetes resources. The below configuration only monitors pods and services
 
