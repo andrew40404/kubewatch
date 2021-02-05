@@ -56,8 +56,6 @@ The Block Storage plug-in is a persistent, high-performance iSCSI storage that y
 
 # **Step 3 Installing Kubewatch on IBM Cloud**
 
-## **Install Kubeapps**
-
 **Requirements:**
 
 - A running Kubernetes cluster on which you need to have cluster-admin privileges
