@@ -1,3 +1,5 @@
+# Installing Kubewatch on IBM Cloud
+
 This document will describe how to install Kubewatch on IBM Cloud using Kubernetes services.
 
 **Step 1 - provision Kubernetes Cluster**
@@ -54,7 +56,7 @@ The Block Storage plug-in is a persistent, high-performance iSCSI storage that y
 - Give a **name** to this workspace
 - Click **install** and wait for the deployment
 
-# **Step 3 Installing Kubewatch on IBM Cloud**
+**Step 3 Installing Kubewatch on IBM Cloud**
 
 **Requirements:**
 
