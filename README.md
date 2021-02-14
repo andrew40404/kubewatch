@@ -2,16 +2,15 @@
 
 This document will describe how to install Kubewatch on IBM Cloud using Kubernetes services.
 
-**Step 1 - provision Kubernetes Cluster**
+## Step 1 - provision Kubernetes Cluster
 
 - Click the **Catalog** button on the top
 - Select **Service** from the **Catalog**
 - Search for **Kubernetes Service** and click on it
 
-  ![installing Kubewatch (1)_html_46d1c04e26ba5eea](https://user-images.githubusercontent.com/5286796/106396369-7ab63700-642d-11eb-803d-854f917fcf39.png)
+![installing Kubewatch (1)_html_46d1c04e26ba5eea](https://user-images.githubusercontent.com/5286796/106396369-7ab63700-642d-11eb-803d-854f917fcf39.png)
 
 - You are now at the Kubernetes deployment page. You need to specify some information about the cluster.
-
 - Choose either of the following plans; **standard** or **free**. The free plan only have one worker node and no subnet. To provision a standard cluster.
   You will need to upgrade your account to Pay-As-You-Go
 - To upgrade to a Pay-As-You-Go account, complete the following steps:
@@ -20,7 +19,7 @@ This document will describe how to install Kubewatch on IBM Cloud using Kubernet
 - Enter your payment information, click Next, and submit your information
 - Choose **classic** or **VPC** , read the docs and choose the most suitable type for yourself
 
-  ![installing Kubewatch (1)_html_4d3a968071544952](https://user-images.githubusercontent.com/5286796/106396367-79850a00-642d-11eb-92cb-ed60e5998b4d.png)
+![installing Kubewatch (1)_html_4d3a968071544952](https://user-images.githubusercontent.com/5286796/106396367-79850a00-642d-11eb-92cb-ed60e5998b4d.png)
 
 - Now choose your location settings,
 - Choose **Geography** (continent)
@@ -39,12 +38,11 @@ This document will describe how to install Kubewatch on IBM Cloud using Kubernet
 
 > In VRF-enabled accounts, you can choose private-only to make your master accessible on the private network or via VPN tunnel. Choose public-only to make your master publicly     accessible. When you have a VRF-enabled account, your cluster is set up by default to use both private and public endpoints.
    
-- Give desired **tags** to your cluster, for more information visit tags
-- Click **create**
+- Give desired **tags** to your cluster, click **create**
 - Wait for your cluster to be provisioned
 - Your cluster is ready for usage
 
-**Step 2 Deploy IBM Cloud Block Storage plug-in**
+## Step 2 Deploy IBM Cloud Block Storage plug-in
 
 The Block Storage plug-in is a persistent, high-performance iSCSI storage that you can add to your apps by using Kubernetes Persistent Volumes (PVs).
 
@@ -56,24 +54,20 @@ The Block Storage plug-in is a persistent, high-performance iSCSI storage that y
 - Give a **name** to this workspace
 - Click **install** and wait for the deployment
 
-**Step 3 Installing Kubewatch on IBM Cloud**
+## Step 3 Installing Kubewatch on IBM Cloud
 
-**Requirements:**
+### Requirements:
 
 - A running Kubernetes cluster on which you need to have cluster-admin privileges
 - A Slack account
 
-**Steps:**
+### Steps:
 
 - Configure Slack- You will need to create a Slack bot and invite the bot to the Slack channel in which you want Kubewatch to post all the notifications. 	
   Kubewatch uses webhooks to display notifications
-
 - Create a private channel and invite the bot in your channel by typing **/invite @name_of_your_bot** in the Slack message area.
-
 - Create a Kubewatch config map with the Slack token and the channel name. You can also modify the flags to configure Kubewatch to notify on changes to particular types of Kubernetes resources. The below configuration only monitors pods and services
-
 - Create a service account for Kubewatch to interact with the Kubernetes resources and assign the relevant privileges through a **ClusterRole** and a **ClusterRoleBinding**
-
 - Create a Kubewatch deployment
 - Check if the pod is running
 - view the Kubewatch container logs 
