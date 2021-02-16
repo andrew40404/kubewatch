@@ -11,7 +11,7 @@ This document will describe how to install Kubewatch on IBM Cloud using Kubernet
 ![installing Kubewatch (1)_html_46d1c04e26ba5eea](https://user-images.githubusercontent.com/5286796/106396369-7ab63700-642d-11eb-803d-854f917fcf39.png)
 
 - You are now at the Kubernetes deployment page. You need to specify some information about the cluster.
-- Choose either of the following plans; **standard** or **free**. The free plan only have one worker node and no subnet. To provision a standard cluster.
+- Choose either of the following plans; **standard** or **free**. The free plan only has one worker node and no subnet. To provision a standard cluster.
   You will need to upgrade your account to Pay-As-You-Go
 - To upgrade to a Pay-As-You-Go account, complete the following steps:
 - In the console, go to Manage > Account.
@@ -49,8 +49,8 @@ The Block Storage plug-in is a persistent, high-performance iSCSI storage that y
 - Click the **Catalog** button on the top
 - Select **Software** from the catalog
 - Search for **IBM Cloud Block Storage plug-in** and click on it
-- On the application page, click in the dot next to the cluster you wish to use
-- Click on Enter or Select Namespace and choose the default Namespace or use a custom one (if you get error please wait 30 minutes for the cluster to finalize)
+- On the application page, click on the dot next to the cluster you wish to use
+- Click on Enter or Select Namespace and choose the default Namespace or use a custom one (if you get an error please wait 30 minutes for the cluster to finalize)
 - Give a **name** to this workspace
 - Click **install** and wait for the deployment
 
@@ -74,9 +74,4 @@ The Block Storage plug-in is a persistent, high-performance iSCSI storage that y
 - Check the Slack channel for notifications
 - Kubewatch will now monitor the cluster and send data to the Slack channel
 
-The installation is done. Enjoy!
-
- 
-
-
- 
+The installation is done. Enjoy! 
